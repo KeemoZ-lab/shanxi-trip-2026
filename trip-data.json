@@ -1,0 +1,3229 @@
+{
+  "$schema": "./schemas/trip-data.schema.json",
+  "schemaVersion": "2.0-lite",
+  "config": {
+    "schemaVersion": "1.0.0",
+    "modules": {
+      "flights": true,
+      "overview": true,
+      "itinerary": true,
+      "driving": false,
+      "todo": true,
+      "ledger": true
+    },
+    "language": "zh-CN",
+    "persistence": {
+      "mode": "local"
+    }
+  },
+  "metadata": {
+    "tripId": "shanxi-2026-1016-1024",
+    "title": "山西 · 古建秋游与花费 | 2026.10.16—10.24",
+    "language": "zh-CN",
+    "timeZone": "Asia/Shanghai",
+    "assets": {
+      "routeMaps": [
+        "assets/maps/templates/template-07-compact-basin.webp"
+      ]
+    },
+    "asOf": "2026-09-16"
+  },
+  "trip": {
+    "status": "draft",
+    "startDate": "2026-10-16",
+    "endDate": "2026-10-24",
+    "dayCount": 9,
+    "nightCountAway": 8,
+    "countries": [
+      {
+        "code": "CN",
+        "nameZh": "中国",
+        "nameEn": "China"
+      }
+    ],
+    "primaryDestinationCountries": [
+      "CN"
+    ],
+    "primaryDestinationName": "山西",
+    "primaryDestinationNameEn": "SHANXI · AUTUMN 2026",
+    "citiesAndAreas": [
+      "太原",
+      "五台山",
+      "大同",
+      "应县",
+      "临汾"
+    ],
+    "routeSummary": "太原 → 五台山 → 大同 → 应县 → 临汾｜订单 ¥3,266.58 · 全程预算约 ¥5,400–6,600",
+    "groupSize": 1
+  },
+  "flightJourneys": [
+    {
+      "id": "outbound",
+      "placeholder": true,
+      "status": "pending",
+      "title": "已出票：东京 → 厦门 → 太原 · 两段合计 ¥1,559",
+      "missingFields": [
+        "东京出发机场及两段航班号、航空公司待补充；已知时刻完整保留在 Day 0 / Day 1"
+      ]
+    },
+    {
+      "id": "return",
+      "status": "ticketed",
+      "title": "临汾 → 天津"
+    }
+  ],
+  "flights": [
+    {
+      "id": "g54317",
+      "journeyId": "return",
+      "sequence": 1,
+      "airline": {
+        "nameZh": "华夏航空"
+      },
+      "flightNumber": "G54317",
+      "departure": {
+        "airportCode": "LFQ",
+        "city": "临汾",
+        "date": "2026-10-24",
+        "time": "10:40",
+        "utcOffset": "+08:00"
+      },
+      "arrival": {
+        "airportCode": "TSN",
+        "city": "天津",
+        "date": "2026-10-24",
+        "time": "12:00",
+        "utcOffset": "+08:00"
+      },
+      "bookingStatus": "已出票",
+      "price": {
+        "currency": "CNY",
+        "amount": 540
+      }
+    }
+  ],
+  "accommodations": [
+    {
+      "id": "taiyuan-stay",
+      "name": "蔚莱智能酒店（太原高铁南站东广场店）",
+      "checkIn": "2026-10-17",
+      "checkOut": "2026-10-19",
+      "nights": 2,
+      "roomCount": 1,
+      "price": {
+        "currency": "CNY",
+        "amount": 254.9,
+        "totalCents": 25490
+      },
+      "bookingStatus": "预订成功",
+      "paymentLabel": "在线付"
+    },
+    {
+      "id": "wutai-stay",
+      "name": "千墨酒店（黛螺顶殊像寺店）",
+      "checkIn": "2026-10-19",
+      "checkOut": "2026-10-20",
+      "nights": 1,
+      "roomCount": 1,
+      "price": {
+        "currency": "CNY",
+        "amount": 458.9,
+        "totalCents": 45890
+      },
+      "bookingStatus": "预订成功",
+      "paymentLabel": "在线付"
+    },
+    {
+      "id": "datong-stay",
+      "name": "聆悦家舍（大同古城店）",
+      "checkIn": "2026-10-20",
+      "checkOut": "2026-10-22",
+      "nights": 2,
+      "roomCount": 1,
+      "price": {
+        "currency": "CNY",
+        "amount": 189.9,
+        "totalCents": 18990
+      },
+      "bookingStatus": "预订成功",
+      "paymentLabel": "在线付"
+    },
+    {
+      "id": "linfen-stay",
+      "name": "临汾思麦尔国际酒店",
+      "checkIn": "2026-10-22",
+      "checkOut": "2026-10-24",
+      "nights": 2,
+      "roomCount": 1,
+      "price": {
+        "currency": "CNY",
+        "amount": 263.88,
+        "totalCents": 26388
+      },
+      "bookingStatus": "预订成功",
+      "paymentLabel": "在线付"
+    }
+  ],
+  "groundTransport": {
+    "rentalCar": null,
+    "rentalChecklist": [],
+    "drivingNotes": [],
+    "drivingReferenceLinks": [],
+    "plannedRoadLegs": [],
+    "publicTransitAndRail": []
+  },
+  "days": [
+    {
+      "id": "day-0",
+      "day": 0,
+      "date": "2026-10-16",
+      "title": "东京 → 厦门 · 出发与全程花费",
+      "locations": [
+        "东京",
+        "厦门"
+      ],
+      "schedule": [
+        {
+          "id": "d0-status-done",
+          "time": "9/23更新",
+          "type": "note",
+          "text": "已完成：东京→厦门→太原及临汾→天津机票；山西7晚酒店；10/23小西天＋广胜寺一日游。无需补订山西住宿或重新报名一日游。"
+        },
+        {
+          "id": "d0-status-buy",
+          "time": "尚待完成",
+          "type": "note",
+          "text": "尚未收到购票完成确认：10/8抢10/22 D1049应县西→临汾西，并安排大同南→应县西；10/14购10/20五台山→大同、10/19太原→五台山大巴，并约10/17山西博物院。五台山进山预约及晋祠、云冈、华严寺、应县木塔 / 净土寺票务也待确认。"
+        },
+        {
+          "id": "d0-status-info",
+          "time": "资料待补",
+          "type": "note",
+          "text": "10/16厦门住宿是否落实；东京出发机场和前两段航班号；已订一日游实际团费、集合点 / 时间、费用包含范围。未提供信息不代表一定没有预订。当前可核金额¥3,266.58未包含新订一日游实际费用。"
+        },
+        {
+          "id": "d0-0",
+          "time": "花费总览",
+          "type": "note",
+          "text": "已知金额订单小计¥3,266.58：机票¥2,099.00＋山西7晚住宿¥1,167.58。10/23一日游现已预订，但实际团费未提供，尚未计入该小计。全部金额为人民币。"
+        },
+        {
+          "id": "d0-1",
+          "time": "机票明细",
+          "type": "note",
+          "text": "东京→厦门→太原 ¥1,559（两段合计，只计一次）；临汾→天津已出票 ¥540。已取消的另一张 ¥580 机票排除，截图无法确认退款到账。"
+        },
+        {
+          "id": "d0-2",
+          "time": "住宿明细",
+          "type": "note",
+          "text": "太原10/17–19两晚 ¥254.90；五台山10/19–20一晚 ¥458.90；大同10/20–22两晚 ¥189.90；临汾10/22–24两晚 ¥263.88。价格均为整笔订单总价，不能再乘晚数。"
+        },
+        {
+          "id": "d0-3",
+          "time": "预算①",
+          "type": "note",
+          "text": "原规划额度：跨地区公共交通及一日游车费¥510–620；市内交通、接驳及机场交通¥300–500。其中一日游原暂估¥138，现已预订，待实际团费提供后替换估值并重算，不能当作还需重新支付的费用。"
+        },
+        {
+          "id": "d0-4",
+          "time": "预算②",
+          "type": "note",
+          "text": "另预留：门票及景区小交通 ¥550–800；9天餐饮 ¥450–720；厦门1晚住宿 ¥150–300；机动 ¥150–300。以上是规划额度，不是景区报价或已支付金额；套票含门票时避免重复计费。"
+        },
+        {
+          "id": "d0-5",
+          "time": "全程预算",
+          "type": "note",
+          "text": "原规划全程约¥5,400–6,600（单人承担现有整房订单），其中一日游按旧估¥138占位。因一日游实际成交金额未提供，目前不能准确给出剩余未支付金额；补齐后更新总预算和记账。"
+        },
+        {
+          "id": "d0-6",
+          "time": "14:55–17:55",
+          "type": "flight",
+          "text": "东京 → 厦门，已出票。时刻按各地当地时间：东京 UTC+9，厦门 UTC+8。东京机场、航班号和航空公司待补充，不猜填。"
+        },
+        {
+          "id": "d0-7",
+          "time": "晚间",
+          "type": "check-in",
+          "text": "厦门住宿自行安排。建议抵达后休息，兼顾第二天早班机；本晚是否已订及实际费用待补充。"
+        }
+      ],
+      "notes": [
+        "建议：先落实厦门住宿到机场的早晨交通；10/17为08:20起飞，建议争取06:20左右抵达机场，出门时间由酒店位置倒推。",
+        "公开版保留行程与费用汇总，已移除订单号、入住人姓名及订单截图。"
+      ],
+      "costReferences": [
+        {
+          "item": "订单 ¥3,266.58"
+        },
+        {
+          "item": "全程预算约 ¥5,400–6,600"
+        }
+      ]
+    },
+    {
+      "id": "day-1",
+      "day": 1,
+      "date": "2026-10-17",
+      "title": "厦门 → 太原 · 博物院与初见晋阳",
+      "locations": [
+        "厦门",
+        "太原武宿机场",
+        "山西博物院"
+      ],
+      "schedule": [
+        {
+          "id": "d1-0",
+          "time": "08:20–11:00",
+          "type": "flight",
+          "text": "厦门 → 太原，已出票，与前一天东京→厦门共 ¥1,559；航班号待补充。"
+        },
+        {
+          "id": "d1-1",
+          "time": "11:00–13:30",
+          "type": "transfer",
+          "text": "抵达武宿机场后，乘地铁1号线前往太原南站，再按订单地址去酒店；或直接打车。原文“9分钟”不能当作机场到酒店全程，取行李、候车和步行需另计。",
+          "placeId": "tyn"
+        },
+        {
+          "id": "d1-2",
+          "time": "午间",
+          "type": "check-in",
+          "text": "蔚莱智能酒店（订单写法；原文写“蔚来”），10/17入住、10/19退房，两晚整单 ¥254.90。先寄存行李或按酒店可入住时间办理。",
+          "placeId": "taiyuan"
+        },
+        {
+          "id": "d1-3",
+          "time": "14:00–16:45",
+          "type": "attraction",
+          "text": "首选山西博物院，建议留2.5–3小时；目前官方公布09:00–17:00、16:00停止入馆，可提前3日预约。行前再次确认。",
+          "placeId": "museum",
+          "ticketIds": [
+            "museum-ticket"
+          ]
+        },
+        {
+          "id": "d1-4",
+          "time": "晚间·可选",
+          "type": "walk",
+          "text": "柳巷 / 钟楼街吃饭散步，飞行后疲惫则直接休息。",
+          "placeId": "zhonglou"
+        }
+      ],
+      "notes": [
+        "购票日历：10/14预约10/17山西博物院。",
+        "建议：这天把博物院作为唯一重点。若航班延误或进馆太晚，下午改逛钟楼街；博物院移到10/18上午，压缩古县城。10/17是周六，10/19是周一，勿把博物院延到去五台山当天。",
+        "核验：山西博物院官网 https://shanximuseum.com.cn/sx/index/index.html（查询于2026-09-16）；具体预约时段以官方微信为准。"
+      ],
+      "costReferences": [
+        {
+          "item": "住宿已订：两晚 ¥254.90"
+        },
+        {
+          "item": "博物院免费预约"
+        }
+      ]
+    },
+    {
+      "id": "day-2",
+      "day": 2,
+      "date": "2026-10-18",
+      "title": "太原 · 晋祠慢看，古县城随兴",
+      "locations": [
+        "太原",
+        "晋祠",
+        "太原古县城"
+      ],
+      "schedule": [
+        {
+          "id": "d2-0",
+          "time": "09:00–12:00",
+          "type": "attraction",
+          "text": "晋祠，建议以古建、雕塑和园林为主，留约3小时。前往景区的路程另计。",
+          "placeId": "jinci",
+          "ticketIds": [
+            "jinci-ticket"
+          ]
+        },
+        {
+          "id": "d2-1",
+          "time": "12:00–13:30",
+          "type": "rest",
+          "text": "午餐与休息，避免下午一路赶场。"
+        },
+        {
+          "id": "d2-2",
+          "time": "14:00–16:30·可选",
+          "type": "attraction",
+          "text": "太原古县城；若昨天没逛博物院，可改为今天博物院＋晋祠，古县城取消。",
+          "placeId": "ancient"
+        },
+        {
+          "id": "d2-3",
+          "time": "傍晚",
+          "type": "walk",
+          "text": "钟楼街 / 柳巷仅在前一天未去、且还有精力时安排。",
+          "placeId": "zhonglou"
+        },
+        {
+          "id": "d2-4",
+          "time": "住宿",
+          "type": "check-in",
+          "text": "继续住蔚莱智能酒店，10/18这一晚已包含在两晚订单内，无需补订。"
+        }
+      ],
+      "notes": [
+        "建议：固定“晋祠”，博物院与古县城按前一天情况取舍，不把三个远近不一的地点都排满。晚上收好行李，给次日早出发留余地。"
+      ],
+      "costReferences": []
+    },
+    {
+      "id": "day-3",
+      "day": 3,
+      "date": "2026-10-19",
+      "title": "太原 → 五台山 · 台怀镇寺院",
+      "locations": [
+        "太原",
+        "五台山台怀镇",
+        "显通寺",
+        "塔院寺"
+      ],
+      "schedule": [
+        {
+          "id": "d3-0",
+          "time": "06:00–07:00·建议",
+          "type": "transfer",
+          "text": "退房并前往太原汽车客运东站，抵站至少留30分钟。酒店在太原南站附近，不能按步行几分钟去东站安排。"
+        },
+        {
+          "id": "d3-1",
+          "time": "07:00–08:00·拟选",
+          "type": "transfer",
+          "text": "选择去五台山台怀镇的早班大巴，原计划 ¥73–83、约4小时均先作参考；确认实际班次、景区入园和终点，勿误买“五台县”或“五台山站”替代。",
+          "placeId": "wutai",
+          "ticketIds": [
+            "wutai-ticket"
+          ]
+        },
+        {
+          "id": "d3-2",
+          "time": "中午",
+          "type": "check-in",
+          "text": "千墨酒店（黛螺顶殊像寺店），10/19–20，一晚 ¥458.90。地址为台怀镇东庄村普寿寺西南150米；与广化寺乘车点的实际步行时间仍需向酒店核对。"
+        },
+        {
+          "id": "d3-3",
+          "time": "14:00–16:30",
+          "type": "attraction",
+          "text": "显通寺 → 塔院寺，按到达时间游览，不再复制到次日的必去清单。",
+          "placeId": "xiantong"
+        },
+        {
+          "id": "d3-4",
+          "time": "晚间",
+          "type": "rest",
+          "text": "用餐、保暖、休息；确认次日17:00大同直通车是否开行及取行李安排。"
+        }
+      ],
+      "notes": [
+        "购票日历：太原→五台山大巴也按10/14一起购买，出行日10/19；实际班次及可售日期以运营方为准。",
+        "建议：若大巴晚到，显通寺和塔院寺只选一个，另一个次日替换菩萨顶或黛螺顶。只安排台怀镇核心寺院，这不是大五台穿越行程。",
+        "保暖：按秋季山地低温准备羽绒服或厚外套，向千墨酒店确认制热。原文“接近0℃”不能作为10/20的确定预报，出发前再查。"
+      ],
+      "costReferences": [
+        {
+          "item": "酒店已订 ¥458.90"
+        },
+        {
+          "item": "大巴暂估 ¥73–83"
+        }
+      ]
+    },
+    {
+      "id": "day-4",
+      "day": 4,
+      "date": "2026-10-20",
+      "title": "五台山 → 大同 · 给17:00班车留余量",
+      "locations": [
+        "五爷庙",
+        "菩萨顶",
+        "黛螺顶",
+        "广化寺",
+        "大同"
+      ],
+      "schedule": [
+        {
+          "id": "d4-0",
+          "time": "07:30–08:30",
+          "type": "attraction",
+          "text": "五爷庙，具体开放及排队以现场为准。",
+          "placeId": "wuye"
+        },
+        {
+          "id": "d4-1",
+          "time": "09:00–10:30",
+          "type": "attraction",
+          "text": "菩萨顶。若前一天有未完成寺院，可在这里替换，不叠加。",
+          "placeId": "pusa"
+        },
+        {
+          "id": "d4-2",
+          "time": "10:30–11:30",
+          "type": "check-out",
+          "text": "按酒店退房规定办理并寄存行李；确认稍后取行李的时间。"
+        },
+        {
+          "id": "d4-3",
+          "time": "12:00–14:30·可选",
+          "type": "hike",
+          "text": "黛螺顶步行上下，作为当天主要爬阶梯段，按体力预留2–3小时；天气不好或进度慢则取消，索道开放情况不作保证。",
+          "placeId": "dailuo"
+        },
+        {
+          "id": "d4-4",
+          "time": "15:00–16:00",
+          "type": "transfer",
+          "text": "结束游览、取行李，前往广化寺地面停车场。不要按酒店宣传距离压缩时间。",
+          "placeId": "guanghua"
+        },
+        {
+          "id": "d4-5",
+          "time": "16:30前",
+          "type": "transfer",
+          "text": "到达乘车点并检票，保留30分钟候车余量。",
+          "placeId": "guanghua",
+          "ticketIds": [
+            "wutai-bus"
+          ]
+        },
+        {
+          "id": "d4-6",
+          "time": "17:00·待当日确认",
+          "type": "transfer",
+          "text": "五台山 → 大同景区直通车，历史官方公布为广化寺地面停车场发车、单程 ¥99；原计划车程约3.5小时，约20:30抵达仅为预估。",
+          "placeId": "datong"
+        },
+        {
+          "id": "d4-7",
+          "time": "晚间",
+          "type": "check-in",
+          "text": "聆悦家舍（大同古城店），10/20–22，两晚整单 ¥189.90；提前告知晚到，确认到站后如何前往房间。"
+        }
+      ],
+      "notes": [
+        "购票日历：10/14购买10/20五台山→大同大巴，优先17:00班次；实际开行及可售日期以运营方为准。",
+        "建议：必保的是17:00交通，其次五爷庙；菩萨顶、黛螺顶按体力选择。不要第二天再把塔院寺、显通寺全部重逛。",
+        "班车依据：大同市政府2025-06-26公布17:00 / ¥99；2026-05-03提示班次会调整，10/20是否开行须以“大同景区直通车”或“晋游宝”当日购票页为准。",
+        "退路：提前发现停运，先找运营方确认替代交通；若只能留宿五台山，需调整大同入住和翌日游览，不依赖临时夜间赶路。"
+      ],
+      "costReferences": [
+        {
+          "item": "参考班车 ¥99"
+        },
+        {
+          "item": "大同两晚已订 ¥189.90"
+        }
+      ]
+    },
+    {
+      "id": "day-5",
+      "day": 5,
+      "date": "2026-10-21",
+      "title": "大同 · 云冈石窟与古城",
+      "locations": [
+        "大同",
+        "云冈石窟",
+        "华严寺",
+        "善化寺"
+      ],
+      "schedule": [
+        {
+          "id": "d5-0",
+          "time": "08:00–09:00·建议",
+          "type": "transfer",
+          "text": "从酒店所在区域前往云冈石窟，预留约45–60分钟作为规划缓冲，以当天导航为准。可比较古城方向景区车与打车，不必专程绕去大同南站。",
+          "placeId": "yungang"
+        },
+        {
+          "id": "d5-1",
+          "time": "09:00–12:30",
+          "type": "attraction",
+          "text": "云冈石窟，留3–3.5小时看主要洞窟及讲解；不把全部石窟压成短暂打卡。",
+          "placeId": "yungang",
+          "ticketIds": [
+            "yungang-ticket"
+          ]
+        },
+        {
+          "id": "d5-2",
+          "time": "12:30–14:00",
+          "type": "rest",
+          "text": "午餐并返回古城区域。"
+        },
+        {
+          "id": "d5-3",
+          "time": "14:00–16:00",
+          "type": "attraction",
+          "text": "华严寺，作为下午主要内容，开放时间行前确认。",
+          "placeId": "huayan",
+          "ticketIds": [
+            "huayan-ticket"
+          ]
+        },
+        {
+          "id": "d5-4",
+          "time": "16:00后·二选一",
+          "type": "walk",
+          "text": "善化寺（以末次入园时间为前提）或古城墙散步；疲惫就吃饭休息，不强行全部完成。",
+          "placeId": "shanhua"
+        },
+        {
+          "id": "d5-5",
+          "time": "住宿",
+          "type": "check-in",
+          "text": "继续住聆悦家舍，10/21已包含在两晚订单内，无需补订。"
+        }
+      ],
+      "notes": [
+        "建议：保留“云冈＋华严寺”两个重点。入住地点的“古城店”是店名，截图地址为迎宾街永泰学府，出门路线应按实际地址核对。",
+        "大同南站确有云冈直通车的官方开通信息，但这是给南站出发游客的选项，不代表从当前酒店过去最省时。"
+      ],
+      "costReferences": [
+        {
+          "item": "本晚住宿已包含"
+        },
+        {
+          "item": "门票从全程 ¥550–800 额度中预留"
+        }
+      ]
+    },
+    {
+      "id": "day-6",
+      "day": 6,
+      "date": "2026-10-22",
+      "title": "大同 → 应县 → 临汾 · 顺路南下",
+      "locations": [
+        "大同南站",
+        "应县西站",
+        "应县木塔",
+        "净土寺",
+        "临汾西站"
+      ],
+      "schedule": [
+        {
+          "id": "d6-0",
+          "time": "早晨",
+          "type": "check-out",
+          "text": "退房并带走行李，前往大同南站；先落实应县景区周边寄存，不能回大同酒店取箱子。"
+        },
+        {
+          "id": "d6-1",
+          "time": "早班·待开售",
+          "type": "transfer",
+          "text": "大同南 → 应县西。近期平台可见约26分钟的直达车，原文“高铁约1.5小时”不宜当作列车运行时间；酒店→车站、候车和应县接驳需另计。10/22时刻以12306为准。",
+          "placeId": "yingxian",
+          "ticketIds": [
+            "rail-ticket"
+          ]
+        },
+        {
+          "id": "d6-2",
+          "time": "上午",
+          "type": "transfer",
+          "text": "应县西站 → 木塔周边，公交班次、打车费用和寄存待核实；原文打车约20元不作确定报价。"
+        },
+        {
+          "id": "d6-3",
+          "time": "09:30–12:00·弹性",
+          "type": "attraction",
+          "text": "应县木塔＋净土寺，根据实际到达调整，尽量给两处合计2–3小时。",
+          "placeId": "pagoda",
+          "ticketIds": [
+            "pagoda-ticket"
+          ]
+        },
+        {
+          "id": "d6-4",
+          "time": "午后优先",
+          "type": "transfer",
+          "text": "直接由应县西去临汾西，不返回大同。优先选择游览结束后仍有充分返站余量、且到临汾不太晚的车次。",
+          "placeId": "linfen"
+        },
+        {
+          "id": "d6-5",
+          "time": "车次备查",
+          "type": "note",
+          "text": "优先目标：10/22 D1049 应县西→临汾西，计划10/8抢票。原文12:38→16:03暂作未核实时刻，若实际按此时刻运行，上午需提前结束游览并留足返站时间。D1037仅为无合适D1049车票时的待核实备选。"
+        },
+        {
+          "id": "d6-6",
+          "time": "中转备选",
+          "type": "transfer",
+          "text": "无合适直达时查应县西→太原南→临汾西联程，同站中转建议至少留45–60分钟；这是一项保守规划建议，需以具体购票结果校准。"
+        },
+        {
+          "id": "d6-7",
+          "time": "晚间",
+          "type": "check-in",
+          "text": "临汾思麦尔国际酒店，10/22–24，两晚整单¥263.88，豪华大床房（内窗）；次日一日游已预订，今晚核对最终集合通知。"
+        }
+      ],
+      "notes": [
+        "购票日历：10/8抢10/22 D1049 应县西→临汾西；此为优先目标，具体起售时刻和当天时刻表以12306为准。",
+        "建议：从景区离开到列车开车至少倒推60–90分钟，覆盖取行李、叫车、路程及进站，实际路况不好再加时间。不要为12:38候选班次硬压木塔和净土寺。",
+        "12306预售期为15天（含当天）；若规则不变，10/22车票对应10/8起售，具体时刻按车站查询。现在可以准备购票信息，不能宣称已经可以买票，也没有证据断定本段必然最紧俏。",
+        "10/23一日游已预订；10/22确认最终集合时间、上车点及出团联系人，无需重新报名。"
+      ],
+      "costReferences": [
+        {
+          "item": "临汾两晚已订 ¥263.88"
+        },
+        {
+          "item": "两段铁路暂留 ¥200–300"
+        }
+      ]
+    },
+    {
+      "id": "day-7",
+      "day": 7,
+      "date": "2026-10-23",
+      "title": "临汾 · 小西天与广胜寺一日游（已预订）",
+      "locations": [
+        "临汾",
+        "小西天",
+        "广胜寺",
+        "临汾"
+      ],
+      "schedule": [
+        {
+          "id": "d7-0",
+          "time": "07:20左右·待通知",
+          "type": "transfer",
+          "text": "一日游已预订（9/23确认）。等待运营方最终集合通知；原文07:20及鼓楼 / 平阳广场仅为参考，准确时间、地点待补充。",
+          "placeId": "linfen",
+          "ticketIds": [
+            "tour-ticket"
+          ]
+        },
+        {
+          "id": "d7-1",
+          "time": "上午",
+          "type": "attraction",
+          "text": "小西天（千佛庵），看明代悬塑；排队与实际停留由当天团队安排决定。",
+          "placeId": "xiaoxitian",
+          "ticketIds": [
+            "tour-entry-inclusion"
+          ]
+        },
+        {
+          "id": "d7-2",
+          "time": "中午",
+          "type": "rest",
+          "text": "午餐及跨景区乘车；餐食是否包含需看产品说明。"
+        },
+        {
+          "id": "d7-3",
+          "time": "下午",
+          "type": "attraction",
+          "text": "广胜寺，重点飞虹塔；如特别想看水神庙元代壁画，报名时确认包含下寺 / 水神庙及当天开放，不能仅凭“广胜寺”三个字推定。",
+          "placeId": "guangsheng"
+        },
+        {
+          "id": "d7-4",
+          "time": "约18:50·参考",
+          "type": "transfer",
+          "text": "返回临汾，原文返程时间仅作预计，以路况、排队及运营方安排为准。",
+          "placeId": "linfen"
+        },
+        {
+          "id": "d7-5",
+          "time": "住宿",
+          "type": "check-in",
+          "text": "继续住思麦尔国际酒店，10/23已包含在两晚订单内，无需补订。"
+        }
+      ],
+      "notes": [
+        "已完成：10/23小西天＋广胜寺一日游预订，无需再次报名。",
+        "待补充：实际团费、运营方、集合时间和地点；待确认是否包含门票、景交、讲解、耳麦、午餐及水神庙。若已包含门票，不再重复购买。",
+        "建议：这天保留两个景区，不再叠加其他远途景点；10/22核对最终出团通知。"
+      ],
+      "costReferences": [
+        {
+          "item": "一日游已预订 · 实际团费待补充"
+        },
+        {
+          "item": "本晚住宿已包含"
+        }
+      ]
+    },
+    {
+      "id": "day-8",
+      "day": 8,
+      "date": "2026-10-24",
+      "title": "临汾 → 天津 · 从容返程",
+      "locations": [
+        "临汾市区",
+        "临汾尧都机场",
+        "天津"
+      ],
+      "schedule": [
+        {
+          "id": "d8-0",
+          "time": "07:00–07:40",
+          "type": "rest",
+          "text": "早餐、收行李、办理退房。"
+        },
+        {
+          "id": "d8-1",
+          "time": "07:50–08:10·建议",
+          "type": "transfer",
+          "text": "从酒店打车出发去临汾尧都机场，按约30–45分钟作为规划值，争取08:40前到达。比原文08:30才离开酒店更有余量。",
+          "placeId": "lfq"
+        },
+        {
+          "id": "d8-2",
+          "time": "08:40前",
+          "type": "note",
+          "text": "机场办理值机与安检；以华夏航空、实际执飞方及机场公布的截止时间为准。"
+        },
+        {
+          "id": "d8-3",
+          "time": "10:40–12:00",
+          "type": "flight",
+          "text": "临汾尧都 → 天津滨海，华夏航空 G54317，已出票 ¥540。票据时刻按用户订单记录；临近出发检查是否调整。"
+        },
+        {
+          "id": "d8-4",
+          "time": "12:00",
+          "type": "note",
+          "text": "抵达天津，行程结束。天津之后的住宿与交通不在本页预算范围内。"
+        }
+      ],
+      "notes": [
+        "建议：把到机场的目标定在起飞前约2小时，再倒推出门时间；不要把“08:30出发”当成任何情况下都充足的保证。"
+      ],
+      "costReferences": [
+        {
+          "item": "机票已出票 ¥540，已计入总额"
+        }
+      ]
+    }
+  ],
+  "places": [
+    {
+      "id": "tyn",
+      "name": "太原武宿机场",
+      "nameZh": "太原武宿机场",
+      "countryCode": "CN",
+      "geo": {
+        "lat": 37.75,
+        "lng": 112.63
+      },
+      "description": "用于固定底图上的示意定位，精确导航请搜索全名。",
+      "navigation": {
+        "query": "山西 太原武宿机场",
+        "url": "https://uri.amap.com/search?keyword=%E5%A4%AA%E5%8E%9F%E6%AD%A6%E5%AE%BF%E6%9C%BA%E5%9C%BA&view=map"
+      }
+    },
+    {
+      "id": "taiyuan",
+      "name": "太原",
+      "nameZh": "太原",
+      "countryCode": "CN",
+      "geo": {
+        "lat": 37.87,
+        "lng": 112.55
+      },
+      "description": "用于固定底图上的示意定位，精确导航请搜索全名。",
+      "navigation": {
+        "query": "山西 太原",
+        "url": "https://uri.amap.com/search?keyword=%E5%A4%AA%E5%8E%9F&view=map"
+      }
+    },
+    {
+      "id": "museum",
+      "name": "山西博物院",
+      "nameZh": "山西博物院",
+      "countryCode": "CN",
+      "geo": {
+        "lat": 37.86,
+        "lng": 112.53
+      },
+      "description": "用于固定底图上的示意定位，精确导航请搜索全名。",
+      "navigation": {
+        "query": "山西 山西博物院",
+        "url": "https://uri.amap.com/search?keyword=%E5%B1%B1%E8%A5%BF%E5%8D%9A%E7%89%A9%E9%99%A2&view=map"
+      }
+    },
+    {
+      "id": "zhonglou",
+      "name": "钟楼街",
+      "nameZh": "钟楼街",
+      "countryCode": "CN",
+      "geo": {
+        "lat": 37.87,
+        "lng": 112.57
+      },
+      "description": "用于固定底图上的示意定位，精确导航请搜索全名。",
+      "navigation": {
+        "query": "山西 钟楼街",
+        "url": "https://uri.amap.com/search?keyword=%E9%92%9F%E6%A5%BC%E8%A1%97&view=map"
+      }
+    },
+    {
+      "id": "jinci",
+      "name": "晋祠",
+      "nameZh": "晋祠",
+      "countryCode": "CN",
+      "geo": {
+        "lat": 37.71,
+        "lng": 112.44
+      },
+      "description": "用于固定底图上的示意定位，精确导航请搜索全名。",
+      "navigation": {
+        "query": "山西 晋祠",
+        "url": "https://uri.amap.com/search?keyword=%E6%99%8B%E7%A5%A0&view=map"
+      }
+    },
+    {
+      "id": "ancient",
+      "name": "太原古县城",
+      "nameZh": "太原古县城",
+      "countryCode": "CN",
+      "geo": {
+        "lat": 37.75,
+        "lng": 112.48
+      },
+      "description": "用于固定底图上的示意定位，精确导航请搜索全名。",
+      "navigation": {
+        "query": "山西 太原古县城",
+        "url": "https://uri.amap.com/search?keyword=%E5%A4%AA%E5%8E%9F%E5%8F%A4%E5%8E%BF%E5%9F%8E&view=map"
+      }
+    },
+    {
+      "id": "wutai",
+      "name": "五台山台怀镇",
+      "nameZh": "五台山台怀镇",
+      "countryCode": "CN",
+      "geo": {
+        "lat": 39,
+        "lng": 113.6
+      },
+      "description": "用于固定底图上的示意定位，精确导航请搜索全名。",
+      "navigation": {
+        "query": "山西 五台山台怀镇",
+        "url": "https://uri.amap.com/search?keyword=%E4%BA%94%E5%8F%B0%E5%B1%B1%E5%8F%B0%E6%80%80%E9%95%87&view=map"
+      }
+    },
+    {
+      "id": "xiantong",
+      "name": "显通寺",
+      "nameZh": "显通寺",
+      "countryCode": "CN",
+      "geo": {
+        "lat": 39.013,
+        "lng": 113.595
+      },
+      "description": "用于固定底图上的示意定位，精确导航请搜索全名。",
+      "navigation": {
+        "query": "山西 显通寺",
+        "url": "https://uri.amap.com/search?keyword=%E6%98%BE%E9%80%9A%E5%AF%BA&view=map"
+      }
+    },
+    {
+      "id": "tayuan",
+      "name": "塔院寺",
+      "nameZh": "塔院寺",
+      "countryCode": "CN",
+      "geo": {
+        "lat": 39.01,
+        "lng": 113.596
+      },
+      "description": "用于固定底图上的示意定位，精确导航请搜索全名。",
+      "navigation": {
+        "query": "山西 塔院寺",
+        "url": "https://uri.amap.com/search?keyword=%E5%A1%94%E9%99%A2%E5%AF%BA&view=map"
+      }
+    },
+    {
+      "id": "wuye",
+      "name": "五爷庙",
+      "nameZh": "五爷庙",
+      "countryCode": "CN",
+      "geo": {
+        "lat": 39.009,
+        "lng": 113.596
+      },
+      "description": "用于固定底图上的示意定位，精确导航请搜索全名。",
+      "navigation": {
+        "query": "山西 五爷庙",
+        "url": "https://uri.amap.com/search?keyword=%E4%BA%94%E7%88%B7%E5%BA%99&view=map"
+      }
+    },
+    {
+      "id": "pusa",
+      "name": "菩萨顶",
+      "nameZh": "菩萨顶",
+      "countryCode": "CN",
+      "geo": {
+        "lat": 39.016,
+        "lng": 113.597
+      },
+      "description": "用于固定底图上的示意定位，精确导航请搜索全名。",
+      "navigation": {
+        "query": "山西 菩萨顶",
+        "url": "https://uri.amap.com/search?keyword=%E8%8F%A9%E8%90%A8%E9%A1%B6&view=map"
+      }
+    },
+    {
+      "id": "dailuo",
+      "name": "黛螺顶",
+      "nameZh": "黛螺顶",
+      "countryCode": "CN",
+      "geo": {
+        "lat": 39.017,
+        "lng": 113.61
+      },
+      "description": "用于固定底图上的示意定位，精确导航请搜索全名。",
+      "navigation": {
+        "query": "山西 黛螺顶",
+        "url": "https://uri.amap.com/search?keyword=%E9%BB%9B%E8%9E%BA%E9%A1%B6&view=map"
+      }
+    },
+    {
+      "id": "guanghua",
+      "name": "广化寺乘车点",
+      "nameZh": "广化寺乘车点",
+      "countryCode": "CN",
+      "geo": {
+        "lat": 39.023,
+        "lng": 113.604
+      },
+      "description": "用于固定底图上的示意定位，精确导航请搜索全名。",
+      "navigation": {
+        "query": "山西 广化寺乘车点",
+        "url": "https://uri.amap.com/search?keyword=%E5%B9%BF%E5%8C%96%E5%AF%BA%E4%B9%98%E8%BD%A6%E7%82%B9&view=map"
+      }
+    },
+    {
+      "id": "datong",
+      "name": "大同",
+      "nameZh": "大同",
+      "countryCode": "CN",
+      "geo": {
+        "lat": 40.09,
+        "lng": 113.3
+      },
+      "description": "用于固定底图上的示意定位，精确导航请搜索全名。",
+      "navigation": {
+        "query": "山西 大同",
+        "url": "https://uri.amap.com/search?keyword=%E5%A4%A7%E5%90%8C&view=map"
+      }
+    },
+    {
+      "id": "yungang",
+      "name": "云冈石窟",
+      "nameZh": "云冈石窟",
+      "countryCode": "CN",
+      "geo": {
+        "lat": 40.11,
+        "lng": 113.13
+      },
+      "description": "用于固定底图上的示意定位，精确导航请搜索全名。",
+      "navigation": {
+        "query": "山西 云冈石窟",
+        "url": "https://uri.amap.com/search?keyword=%E4%BA%91%E5%86%88%E7%9F%B3%E7%AA%9F&view=map"
+      }
+    },
+    {
+      "id": "huayan",
+      "name": "华严寺",
+      "nameZh": "华严寺",
+      "countryCode": "CN",
+      "geo": {
+        "lat": 40.09,
+        "lng": 113.291
+      },
+      "description": "用于固定底图上的示意定位，精确导航请搜索全名。",
+      "navigation": {
+        "query": "山西 华严寺",
+        "url": "https://uri.amap.com/search?keyword=%E5%8D%8E%E4%B8%A5%E5%AF%BA&view=map"
+      }
+    },
+    {
+      "id": "shanhua",
+      "name": "善化寺",
+      "nameZh": "善化寺",
+      "countryCode": "CN",
+      "geo": {
+        "lat": 40.083,
+        "lng": 113.299
+      },
+      "description": "用于固定底图上的示意定位，精确导航请搜索全名。",
+      "navigation": {
+        "query": "山西 善化寺",
+        "url": "https://uri.amap.com/search?keyword=%E5%96%84%E5%8C%96%E5%AF%BA&view=map"
+      }
+    },
+    {
+      "id": "yingxian",
+      "name": "应县",
+      "nameZh": "应县",
+      "countryCode": "CN",
+      "geo": {
+        "lat": 39.55,
+        "lng": 113.19
+      },
+      "description": "用于固定底图上的示意定位，精确导航请搜索全名。",
+      "navigation": {
+        "query": "山西 应县",
+        "url": "https://uri.amap.com/search?keyword=%E5%BA%94%E5%8E%BF&view=map"
+      }
+    },
+    {
+      "id": "pagoda",
+      "name": "应县木塔",
+      "nameZh": "应县木塔",
+      "countryCode": "CN",
+      "geo": {
+        "lat": 39.565,
+        "lng": 113.183
+      },
+      "description": "用于固定底图上的示意定位，精确导航请搜索全名。",
+      "navigation": {
+        "query": "山西 应县木塔",
+        "url": "https://uri.amap.com/search?keyword=%E5%BA%94%E5%8E%BF%E6%9C%A8%E5%A1%94&view=map"
+      }
+    },
+    {
+      "id": "jingtu",
+      "name": "净土寺",
+      "nameZh": "净土寺",
+      "countryCode": "CN",
+      "geo": {
+        "lat": 39.564,
+        "lng": 113.191
+      },
+      "description": "用于固定底图上的示意定位，精确导航请搜索全名。",
+      "navigation": {
+        "query": "山西 净土寺",
+        "url": "https://uri.amap.com/search?keyword=%E5%87%80%E5%9C%9F%E5%AF%BA&view=map"
+      }
+    },
+    {
+      "id": "linfen",
+      "name": "临汾",
+      "nameZh": "临汾",
+      "countryCode": "CN",
+      "geo": {
+        "lat": 36.09,
+        "lng": 111.52
+      },
+      "description": "用于固定底图上的示意定位，精确导航请搜索全名。",
+      "navigation": {
+        "query": "山西 临汾",
+        "url": "https://uri.amap.com/search?keyword=%E4%B8%B4%E6%B1%BE&view=map"
+      }
+    },
+    {
+      "id": "xiaoxitian",
+      "name": "小西天",
+      "nameZh": "小西天",
+      "countryCode": "CN",
+      "geo": {
+        "lat": 36.7,
+        "lng": 110.93
+      },
+      "description": "用于固定底图上的示意定位，精确导航请搜索全名。",
+      "navigation": {
+        "query": "山西 小西天",
+        "url": "https://uri.amap.com/search?keyword=%E5%B0%8F%E8%A5%BF%E5%A4%A9&view=map"
+      }
+    },
+    {
+      "id": "guangsheng",
+      "name": "广胜寺",
+      "nameZh": "广胜寺",
+      "countryCode": "CN",
+      "geo": {
+        "lat": 36.31,
+        "lng": 111.68
+      },
+      "description": "用于固定底图上的示意定位，精确导航请搜索全名。",
+      "navigation": {
+        "query": "山西 广胜寺",
+        "url": "https://uri.amap.com/search?keyword=%E5%B9%BF%E8%83%9C%E5%AF%BA&view=map"
+      }
+    },
+    {
+      "id": "lfq",
+      "name": "临汾尧都机场",
+      "nameZh": "临汾尧都机场",
+      "countryCode": "CN",
+      "geo": {
+        "lat": 36.13,
+        "lng": 111.64
+      },
+      "description": "用于固定底图上的示意定位，精确导航请搜索全名。",
+      "navigation": {
+        "query": "山西 临汾尧都机场",
+        "url": "https://uri.amap.com/search?keyword=%E4%B8%B4%E6%B1%BE%E5%B0%A7%E9%83%BD%E6%9C%BA%E5%9C%BA&view=map"
+      }
+    }
+  ],
+  "restaurants": [],
+  "bookingsAndTickets": [
+    {
+      "id": "outbound-order",
+      "bookedAt": "2026-09-04",
+      "status": "已出票",
+      "amountCents": 155900,
+      "currency": "CNY",
+      "title": "东京—厦门—太原（两段合计）"
+    },
+    {
+      "id": "return-order",
+      "bookedAt": "2026-09-16",
+      "status": "已出票",
+      "amountCents": 54000,
+      "currency": "CNY",
+      "title": "临汾—天津"
+    },
+    {
+      "id": "cancelled-return",
+      "status": "已取消",
+      "amountCents": 58000,
+      "currency": "CNY",
+      "excludedFromTripTotal": true,
+      "refundStatus": "截图未显示退款到账状态"
+    }
+  ],
+  "ticketPlanning": {
+    "statusStorage": "local",
+    "statusStorageNote": "门票和交通待办状态保存在当前浏览器，勾选不代表实际完成预订。",
+    "items": [
+      {
+        "id": "museum-ticket",
+        "day": 1,
+        "name": "10/14预约：10/17山西博物院",
+        "requirement": "advance-required",
+        "guidance": [
+          "计划10/14预约10/17山西博物院；具体放号时刻及预约规则以官方微信公众号为准。",
+          "免费预约；现官方页面写可提前3日（不含当天）预约。若规则不变，10/17对应10/14起可尝试预约；具体放号时刻查官方微信。",
+          "09:00–17:00，16:00停止入馆；出发前复核。"
+        ],
+        "officialUrl": "https://shanximuseum.com.cn/sx/index/index.html"
+      },
+      {
+        "id": "jinci-ticket",
+        "day": 2,
+        "name": "晋祠门票",
+        "requirement": "needs-confirmation",
+        "guidance": [
+          "10/18票价与预约方式待按景区官方渠道确认，本页未引用成人票优惠价。"
+        ]
+      },
+      {
+        "id": "wutai-ticket",
+        "day": 3,
+        "name": "10/14购太原→五台山大巴；另约进山",
+        "requirement": "advance-required",
+        "guidance": [
+          "太原→五台山大巴也按10/14一起购票，出行日为10/19，选择去台怀镇的早班车；确认发站、实际班次、入园预约与费用。10/14为个人购票安排。",
+          "先确认太原客运东站至台怀镇的当天班次，再预约五台山入园。原文73–83元为未核实参考；是否含接驳和入园费用应分别确认。"
+        ]
+      },
+      {
+        "id": "wutai-bus",
+        "day": 4,
+        "name": "10/14购票：10/20五台山→大同大巴",
+        "requirement": "advance-required",
+        "guidance": [
+          "计划10/14购买10/20五台山→大同大巴，优先17:00广化寺地面停车场班次；10/14为个人购票安排，不代表运营方已确认的开售日。",
+          "2025-06-26官方公告：17:00广化寺地面停车场发车，单程99元；这不代表2026-10-20已确认运营。",
+          "通过“大同景区直通车”或“晋游宝”购票，10/20时刻和取消规则以订单页为准。"
+        ],
+        "officialUrl": "https://ai.dt.gov.cn/dtszf/bumdtq/202506/3372307ef5a144c0a7776207e970e1d9.shtml"
+      },
+      {
+        "id": "yungang-ticket",
+        "day": 5,
+        "name": "云冈石窟门票",
+        "requirement": "advance-recommended",
+        "guidance": [
+          "门票、开放洞窟及讲解按景区官方渠道确认；门票尚未预订。"
+        ]
+      },
+      {
+        "id": "huayan-ticket",
+        "day": 5,
+        "name": "华严寺门票",
+        "requirement": "needs-confirmation",
+        "guidance": [
+          "行前确认开放时间与末次入园，下午保留约2小时。"
+        ]
+      },
+      {
+        "id": "rail-ticket",
+        "day": 6,
+        "name": "10/8抢票：10/22 D1049 应县西→临汾西",
+        "requirement": "advance-required",
+        "guidance": [
+          "用户选定10/8抢10/22的D1049，应县西→临汾西；具体起售时间、车次、停站和时刻仍以12306当日公布为准。",
+          "按15天（含当天）预售期推算为10/8开售；具体起售时间、车次、停站及价格以12306为准。",
+          "原文D1049与D1037不作已核实时刻使用。"
+        ],
+        "officialUrl": "https://www.12306.cn/mormhweb/zxdt/202205/t20220531_37508.html"
+      },
+      {
+        "id": "pagoda-ticket",
+        "day": 6,
+        "name": "应县木塔 / 净土寺",
+        "requirement": "needs-confirmation",
+        "guidance": [
+          "两处是否需分别购票、开放时间与寄存位置待确认，不能以应县站的旧公交攻略代替应县西站接驳信息。"
+        ]
+      },
+      {
+        "id": "tour-ticket",
+        "day": 7,
+        "name": "已预订｜10/23小西天＋广胜寺一日游",
+        "requirement": "advance-required",
+        "guidance": [
+          "用户已于9/23确认预订完成，无需再次报名；实际成交金额、运营方及订单资料待补充。",
+          "集合时间、地点以及是否包含门票、景交、讲解、耳麦、午餐、水神庙，仍需按已购产品确认；10/22核对最终出团通知。",
+          "原计划¥138只是旧预算，不作为本笔实际成交价，也不据此增加记账金额。"
+        ],
+        "purchaseStatus": "purchased",
+        "bookingConfirmedAsOf": "2026-09-23"
+      },
+      {
+        "id": "tour-entry-inclusion",
+        "day": 7,
+        "name": "小西天 / 广胜寺门票是否已含：待核对订单",
+        "requirement": "needs-confirmation",
+        "guidance": [
+          "一日游已预订，但尚未提供套餐内容。先核对是否包含两处门票和景区小交通，已包含时无需另买；确认后可勾选本项。"
+        ]
+      }
+    ]
+  },
+  "preTrip": {
+    "packingItems": [
+      {
+        "id": "todo-rail",
+        "text": "10/8：抢10/22 D1049 应县西→临汾西车票；起售时刻及当天车次以12306为准。",
+        "completed": false
+      },
+      {
+        "id": "todo-bus",
+        "text": "10/14：购买10/20五台山→大同大巴，优先17:00广化寺地面停车场班次，确认当日开行。",
+        "completed": false
+      },
+      {
+        "id": "todo-taiyuan-bus",
+        "text": "10/14：购买10/19太原→五台山台怀镇早班大巴，核实出发站、班次及进山费用。",
+        "completed": false
+      },
+      {
+        "id": "todo-museum",
+        "text": "10/14：预约10/17山西博物院门票，按官方微信放号时刻操作。",
+        "completed": false
+      },
+      {
+        "id": "todo-warm",
+        "text": "带羽绒服 / 厚外套，确认千墨酒店暖气或空调制热。",
+        "completed": false
+      },
+      {
+        "id": "todo-tour",
+        "text": "已预订：10/23小西天＋广胜寺一日游（9/23确认）。",
+        "completed": true
+      },
+      {
+        "id": "todo-rail-datong",
+        "text": "待购：10/22大同南→应县西车票，与应县西→临汾西车次衔接。",
+        "completed": false
+      },
+      {
+        "id": "todo-wutai-entry",
+        "text": "待确认已购：10/19五台山进山门票 / 入园预约；不能默认大巴已包含。",
+        "completed": false
+      },
+      {
+        "id": "todo-other-tickets",
+        "text": "待确认已购：晋祠、云冈石窟、华严寺、应县木塔 / 净土寺；可选景点按最终行程决定。",
+        "completed": false
+      },
+      {
+        "id": "todo-xiamen",
+        "text": "待确认：10/16厦门住宿是否已落实；补充酒店、费用及次日早班机接驳。",
+        "completed": false
+      },
+      {
+        "id": "todo-tour-details",
+        "text": "待补充：已订10/23一日游的实际团费、运营方及费用包含范围；10/22确认集合时间和上车点。",
+        "completed": false
+      },
+      {
+        "id": "todo-flight-details",
+        "text": "待补充：东京出发机场、东京→厦门及厦门→太原两段航班号 / 航空公司；两段已出票，无需重新购买。",
+        "completed": false
+      }
+    ],
+    "preparationsExplicitlyMentioned": [],
+    "missingNote": "截至9/23：机票、山西7晚酒店及10/23一日游已确认预订；铁路、大巴、景区预约尚未收到完成确认；厦门住宿和一日游实际团费 / 集合信息待补充。"
+  },
+  "mapLinks": {
+    "providedGoogleMapsLinks": [],
+    "note": "地图为相对方位示意；导航请按景点全名、车票站名和订单地址核对。",
+    "cityLevelNavigationDisabled": false,
+    "navigationPolicy": {
+      "noNavigationTypes": [
+        "flight",
+        "note",
+        "rest"
+      ],
+      "selfNavigationTypes": [
+        "transfer",
+        "check-in",
+        "check-out",
+        "attraction",
+        "walk",
+        "hike"
+      ]
+    },
+    "navigationPlaces": [
+      {
+        "id": "tyn",
+        "placeId": "tyn",
+        "label": "太原武宿机场",
+        "name": "太原武宿机场",
+        "query": "中国 山西 太原武宿机场",
+        "url": "https://uri.amap.com/search?keyword=%E5%A4%AA%E5%8E%9F%E6%AD%A6%E5%AE%BF%E6%9C%BA%E5%9C%BA&city=%E5%B1%B1%E8%A5%BF&view=map",
+        "matchTerms": [
+          "太原武宿机场"
+        ]
+      },
+      {
+        "id": "taiyuan",
+        "placeId": "taiyuan",
+        "label": "太原",
+        "name": "太原",
+        "query": "中国 山西 太原",
+        "url": "https://uri.amap.com/search?keyword=%E5%A4%AA%E5%8E%9F&city=%E5%B1%B1%E8%A5%BF&view=map",
+        "matchTerms": [
+          "太原"
+        ]
+      },
+      {
+        "id": "museum",
+        "placeId": "museum",
+        "label": "山西博物院",
+        "name": "山西博物院",
+        "query": "中国 山西 山西博物院",
+        "url": "https://uri.amap.com/search?keyword=%E5%B1%B1%E8%A5%BF%E5%8D%9A%E7%89%A9%E9%99%A2&city=%E5%B1%B1%E8%A5%BF&view=map",
+        "matchTerms": [
+          "山西博物院"
+        ]
+      },
+      {
+        "id": "zhonglou",
+        "placeId": "zhonglou",
+        "label": "钟楼街",
+        "name": "钟楼街",
+        "query": "中国 山西 钟楼街",
+        "url": "https://uri.amap.com/search?keyword=%E9%92%9F%E6%A5%BC%E8%A1%97&city=%E5%B1%B1%E8%A5%BF&view=map",
+        "matchTerms": [
+          "钟楼街"
+        ]
+      },
+      {
+        "id": "jinci",
+        "placeId": "jinci",
+        "label": "晋祠",
+        "name": "晋祠",
+        "query": "中国 山西 晋祠",
+        "url": "https://uri.amap.com/search?keyword=%E6%99%8B%E7%A5%A0&city=%E5%B1%B1%E8%A5%BF&view=map",
+        "matchTerms": [
+          "晋祠"
+        ]
+      },
+      {
+        "id": "ancient",
+        "placeId": "ancient",
+        "label": "太原古县城",
+        "name": "太原古县城",
+        "query": "中国 山西 太原古县城",
+        "url": "https://uri.amap.com/search?keyword=%E5%A4%AA%E5%8E%9F%E5%8F%A4%E5%8E%BF%E5%9F%8E&city=%E5%B1%B1%E8%A5%BF&view=map",
+        "matchTerms": [
+          "太原古县城"
+        ]
+      },
+      {
+        "id": "wutai",
+        "placeId": "wutai",
+        "label": "五台山台怀镇",
+        "name": "五台山台怀镇",
+        "query": "中国 山西 五台山台怀镇",
+        "url": "https://uri.amap.com/search?keyword=%E4%BA%94%E5%8F%B0%E5%B1%B1%E5%8F%B0%E6%80%80%E9%95%87&city=%E5%B1%B1%E8%A5%BF&view=map",
+        "matchTerms": [
+          "五台山台怀镇"
+        ]
+      },
+      {
+        "id": "xiantong",
+        "placeId": "xiantong",
+        "label": "显通寺",
+        "name": "显通寺",
+        "query": "中国 山西 显通寺",
+        "url": "https://uri.amap.com/search?keyword=%E6%98%BE%E9%80%9A%E5%AF%BA&city=%E5%B1%B1%E8%A5%BF&view=map",
+        "matchTerms": [
+          "显通寺"
+        ]
+      },
+      {
+        "id": "tayuan",
+        "placeId": "tayuan",
+        "label": "塔院寺",
+        "name": "塔院寺",
+        "query": "中国 山西 塔院寺",
+        "url": "https://uri.amap.com/search?keyword=%E5%A1%94%E9%99%A2%E5%AF%BA&city=%E5%B1%B1%E8%A5%BF&view=map",
+        "matchTerms": [
+          "塔院寺"
+        ]
+      },
+      {
+        "id": "wuye",
+        "placeId": "wuye",
+        "label": "五爷庙",
+        "name": "五爷庙",
+        "query": "中国 山西 五爷庙",
+        "url": "https://uri.amap.com/search?keyword=%E4%BA%94%E7%88%B7%E5%BA%99&city=%E5%B1%B1%E8%A5%BF&view=map",
+        "matchTerms": [
+          "五爷庙"
+        ]
+      },
+      {
+        "id": "pusa",
+        "placeId": "pusa",
+        "label": "菩萨顶",
+        "name": "菩萨顶",
+        "query": "中国 山西 菩萨顶",
+        "url": "https://uri.amap.com/search?keyword=%E8%8F%A9%E8%90%A8%E9%A1%B6&city=%E5%B1%B1%E8%A5%BF&view=map",
+        "matchTerms": [
+          "菩萨顶"
+        ]
+      },
+      {
+        "id": "dailuo",
+        "placeId": "dailuo",
+        "label": "黛螺顶",
+        "name": "黛螺顶",
+        "query": "中国 山西 黛螺顶",
+        "url": "https://uri.amap.com/search?keyword=%E9%BB%9B%E8%9E%BA%E9%A1%B6&city=%E5%B1%B1%E8%A5%BF&view=map",
+        "matchTerms": [
+          "黛螺顶"
+        ]
+      },
+      {
+        "id": "guanghua",
+        "placeId": "guanghua",
+        "label": "广化寺乘车点",
+        "name": "广化寺乘车点",
+        "query": "中国 山西 广化寺乘车点",
+        "url": "https://uri.amap.com/search?keyword=%E5%B9%BF%E5%8C%96%E5%AF%BA%E4%B9%98%E8%BD%A6%E7%82%B9&city=%E5%B1%B1%E8%A5%BF&view=map",
+        "matchTerms": [
+          "广化寺乘车点"
+        ]
+      },
+      {
+        "id": "datong",
+        "placeId": "datong",
+        "label": "大同",
+        "name": "大同",
+        "query": "中国 山西 大同",
+        "url": "https://uri.amap.com/search?keyword=%E5%A4%A7%E5%90%8C&city=%E5%B1%B1%E8%A5%BF&view=map",
+        "matchTerms": [
+          "大同"
+        ]
+      },
+      {
+        "id": "yungang",
+        "placeId": "yungang",
+        "label": "云冈石窟",
+        "name": "云冈石窟",
+        "query": "中国 山西 云冈石窟",
+        "url": "https://uri.amap.com/search?keyword=%E4%BA%91%E5%86%88%E7%9F%B3%E7%AA%9F&city=%E5%B1%B1%E8%A5%BF&view=map",
+        "matchTerms": [
+          "云冈石窟"
+        ]
+      },
+      {
+        "id": "huayan",
+        "placeId": "huayan",
+        "label": "华严寺",
+        "name": "华严寺",
+        "query": "中国 山西 华严寺",
+        "url": "https://uri.amap.com/search?keyword=%E5%8D%8E%E4%B8%A5%E5%AF%BA&city=%E5%B1%B1%E8%A5%BF&view=map",
+        "matchTerms": [
+          "华严寺"
+        ]
+      },
+      {
+        "id": "shanhua",
+        "placeId": "shanhua",
+        "label": "善化寺",
+        "name": "善化寺",
+        "query": "中国 山西 善化寺",
+        "url": "https://uri.amap.com/search?keyword=%E5%96%84%E5%8C%96%E5%AF%BA&city=%E5%B1%B1%E8%A5%BF&view=map",
+        "matchTerms": [
+          "善化寺"
+        ]
+      },
+      {
+        "id": "yingxian",
+        "placeId": "yingxian",
+        "label": "应县",
+        "name": "应县",
+        "query": "中国 山西 应县",
+        "url": "https://uri.amap.com/search?keyword=%E5%BA%94%E5%8E%BF&city=%E5%B1%B1%E8%A5%BF&view=map",
+        "matchTerms": [
+          "应县"
+        ]
+      },
+      {
+        "id": "pagoda",
+        "placeId": "pagoda",
+        "label": "应县木塔",
+        "name": "应县木塔",
+        "query": "中国 山西 应县木塔",
+        "url": "https://uri.amap.com/search?keyword=%E5%BA%94%E5%8E%BF%E6%9C%A8%E5%A1%94&city=%E5%B1%B1%E8%A5%BF&view=map",
+        "matchTerms": [
+          "应县木塔"
+        ]
+      },
+      {
+        "id": "jingtu",
+        "placeId": "jingtu",
+        "label": "净土寺",
+        "name": "净土寺",
+        "query": "中国 山西 净土寺",
+        "url": "https://uri.amap.com/search?keyword=%E5%87%80%E5%9C%9F%E5%AF%BA&city=%E5%B1%B1%E8%A5%BF&view=map",
+        "matchTerms": [
+          "净土寺"
+        ]
+      },
+      {
+        "id": "linfen",
+        "placeId": "linfen",
+        "label": "临汾",
+        "name": "临汾",
+        "query": "中国 山西 临汾",
+        "url": "https://uri.amap.com/search?keyword=%E4%B8%B4%E6%B1%BE&city=%E5%B1%B1%E8%A5%BF&view=map",
+        "matchTerms": [
+          "临汾"
+        ]
+      },
+      {
+        "id": "xiaoxitian",
+        "placeId": "xiaoxitian",
+        "label": "小西天",
+        "name": "小西天",
+        "query": "中国 山西 小西天",
+        "url": "https://uri.amap.com/search?keyword=%E5%B0%8F%E8%A5%BF%E5%A4%A9&city=%E5%B1%B1%E8%A5%BF&view=map",
+        "matchTerms": [
+          "小西天"
+        ]
+      },
+      {
+        "id": "guangsheng",
+        "placeId": "guangsheng",
+        "label": "广胜寺",
+        "name": "广胜寺",
+        "query": "中国 山西 广胜寺",
+        "url": "https://uri.amap.com/search?keyword=%E5%B9%BF%E8%83%9C%E5%AF%BA&city=%E5%B1%B1%E8%A5%BF&view=map",
+        "matchTerms": [
+          "广胜寺"
+        ]
+      },
+      {
+        "id": "lfq",
+        "placeId": "lfq",
+        "label": "临汾尧都机场",
+        "name": "临汾尧都机场",
+        "query": "中国 山西 临汾尧都机场",
+        "url": "https://uri.amap.com/search?keyword=%E4%B8%B4%E6%B1%BE%E5%B0%A7%E9%83%BD%E6%9C%BA%E5%9C%BA&city=%E5%B1%B1%E8%A5%BF&view=map",
+        "matchTerms": [
+          "临汾尧都机场"
+        ]
+      }
+    ]
+  },
+  "issuesAndUncertainties": [
+    "山西7晚住宿已全部覆盖，原文补订3晚提醒已纠正。",
+    "东京出发机场、两段出境/国内航班号与航空公司缺失；保留已知起降时刻与出票状态。",
+    "厦门住宿金额未提供。",
+    "未来列车、巴士和一日游时刻未经出行日确认。",
+    "预算以单人且承担现有整房订单为假设。",
+    "原始截图名称与行程简称有差异，酒店导航以原订单地址为准。",
+    "9/23用户确认10/23一日游已预订，实际团费和集合信息未提供；其他票务未收到新完成确认。"
+  ],
+  "map": {
+    "schemaVersion": "1.0-lite",
+    "mapMode": "template-auto",
+    "templateId": "auto",
+    "disclaimer": "本图仅表达山西内部的相对方位与路线顺序；点位为示意定位，不代表真实比例、精确位置或行政边界。东京、厦门和天津不纳入山西地图。",
+    "region": {
+      "id": "shanxi",
+      "label": "山西",
+      "heading": "SHANXI / 山西古建秋游",
+      "description": "太原 → 五台山 → 大同 → 应县 → 临汾",
+      "countryCode": "CN"
+    },
+    "places": [
+      {
+        "id": "tyn",
+        "name": "太原武宿机场",
+        "nameZh": "太原武宿机场",
+        "countryCode": "CN",
+        "geo": {
+          "lat": 37.75,
+          "lng": 112.63
+        },
+        "description": "用于固定底图上的示意定位，精确导航请搜索全名。",
+        "label": "太原武宿机场",
+        "mapRegionId": "shanxi"
+      },
+      {
+        "id": "taiyuan",
+        "name": "太原",
+        "nameZh": "太原",
+        "countryCode": "CN",
+        "geo": {
+          "lat": 37.87,
+          "lng": 112.55
+        },
+        "description": "用于固定底图上的示意定位，精确导航请搜索全名。",
+        "label": "太原",
+        "mapRegionId": "shanxi"
+      },
+      {
+        "id": "museum",
+        "name": "山西博物院",
+        "nameZh": "山西博物院",
+        "countryCode": "CN",
+        "geo": {
+          "lat": 37.86,
+          "lng": 112.53
+        },
+        "description": "用于固定底图上的示意定位，精确导航请搜索全名。",
+        "label": "山西博物院",
+        "mapRegionId": "shanxi"
+      },
+      {
+        "id": "zhonglou",
+        "name": "钟楼街",
+        "nameZh": "钟楼街",
+        "countryCode": "CN",
+        "geo": {
+          "lat": 37.87,
+          "lng": 112.57
+        },
+        "description": "用于固定底图上的示意定位，精确导航请搜索全名。",
+        "label": "钟楼街",
+        "mapRegionId": "shanxi"
+      },
+      {
+        "id": "jinci",
+        "name": "晋祠",
+        "nameZh": "晋祠",
+        "countryCode": "CN",
+        "geo": {
+          "lat": 37.71,
+          "lng": 112.44
+        },
+        "description": "用于固定底图上的示意定位，精确导航请搜索全名。",
+        "label": "晋祠",
+        "mapRegionId": "shanxi"
+      },
+      {
+        "id": "ancient",
+        "name": "太原古县城",
+        "nameZh": "太原古县城",
+        "countryCode": "CN",
+        "geo": {
+          "lat": 37.75,
+          "lng": 112.48
+        },
+        "description": "用于固定底图上的示意定位，精确导航请搜索全名。",
+        "label": "太原古县城",
+        "mapRegionId": "shanxi"
+      },
+      {
+        "id": "wutai",
+        "name": "五台山台怀镇",
+        "nameZh": "五台山台怀镇",
+        "countryCode": "CN",
+        "geo": {
+          "lat": 39,
+          "lng": 113.6
+        },
+        "description": "用于固定底图上的示意定位，精确导航请搜索全名。",
+        "label": "五台山台怀镇",
+        "mapRegionId": "shanxi"
+      },
+      {
+        "id": "xiantong",
+        "name": "显通寺",
+        "nameZh": "显通寺",
+        "countryCode": "CN",
+        "geo": {
+          "lat": 39.013,
+          "lng": 113.595
+        },
+        "description": "用于固定底图上的示意定位，精确导航请搜索全名。",
+        "label": "显通寺",
+        "mapRegionId": "shanxi"
+      },
+      {
+        "id": "tayuan",
+        "name": "塔院寺",
+        "nameZh": "塔院寺",
+        "countryCode": "CN",
+        "geo": {
+          "lat": 39.01,
+          "lng": 113.596
+        },
+        "description": "用于固定底图上的示意定位，精确导航请搜索全名。",
+        "label": "塔院寺",
+        "mapRegionId": "shanxi"
+      },
+      {
+        "id": "wuye",
+        "name": "五爷庙",
+        "nameZh": "五爷庙",
+        "countryCode": "CN",
+        "geo": {
+          "lat": 39.009,
+          "lng": 113.596
+        },
+        "description": "用于固定底图上的示意定位，精确导航请搜索全名。",
+        "label": "五爷庙",
+        "mapRegionId": "shanxi"
+      },
+      {
+        "id": "pusa",
+        "name": "菩萨顶",
+        "nameZh": "菩萨顶",
+        "countryCode": "CN",
+        "geo": {
+          "lat": 39.016,
+          "lng": 113.597
+        },
+        "description": "用于固定底图上的示意定位，精确导航请搜索全名。",
+        "label": "菩萨顶",
+        "mapRegionId": "shanxi"
+      },
+      {
+        "id": "dailuo",
+        "name": "黛螺顶",
+        "nameZh": "黛螺顶",
+        "countryCode": "CN",
+        "geo": {
+          "lat": 39.017,
+          "lng": 113.61
+        },
+        "description": "用于固定底图上的示意定位，精确导航请搜索全名。",
+        "label": "黛螺顶",
+        "mapRegionId": "shanxi"
+      },
+      {
+        "id": "guanghua",
+        "name": "广化寺乘车点",
+        "nameZh": "广化寺乘车点",
+        "countryCode": "CN",
+        "geo": {
+          "lat": 39.023,
+          "lng": 113.604
+        },
+        "description": "用于固定底图上的示意定位，精确导航请搜索全名。",
+        "label": "广化寺乘车点",
+        "mapRegionId": "shanxi"
+      },
+      {
+        "id": "datong",
+        "name": "大同",
+        "nameZh": "大同",
+        "countryCode": "CN",
+        "geo": {
+          "lat": 40.09,
+          "lng": 113.3
+        },
+        "description": "用于固定底图上的示意定位，精确导航请搜索全名。",
+        "label": "大同",
+        "mapRegionId": "shanxi"
+      },
+      {
+        "id": "yungang",
+        "name": "云冈石窟",
+        "nameZh": "云冈石窟",
+        "countryCode": "CN",
+        "geo": {
+          "lat": 40.11,
+          "lng": 113.13
+        },
+        "description": "用于固定底图上的示意定位，精确导航请搜索全名。",
+        "label": "云冈石窟",
+        "mapRegionId": "shanxi"
+      },
+      {
+        "id": "huayan",
+        "name": "华严寺",
+        "nameZh": "华严寺",
+        "countryCode": "CN",
+        "geo": {
+          "lat": 40.09,
+          "lng": 113.291
+        },
+        "description": "用于固定底图上的示意定位，精确导航请搜索全名。",
+        "label": "华严寺",
+        "mapRegionId": "shanxi"
+      },
+      {
+        "id": "shanhua",
+        "name": "善化寺",
+        "nameZh": "善化寺",
+        "countryCode": "CN",
+        "geo": {
+          "lat": 40.083,
+          "lng": 113.299
+        },
+        "description": "用于固定底图上的示意定位，精确导航请搜索全名。",
+        "label": "善化寺",
+        "mapRegionId": "shanxi"
+      },
+      {
+        "id": "yingxian",
+        "name": "应县",
+        "nameZh": "应县",
+        "countryCode": "CN",
+        "geo": {
+          "lat": 39.55,
+          "lng": 113.19
+        },
+        "description": "用于固定底图上的示意定位，精确导航请搜索全名。",
+        "label": "应县",
+        "mapRegionId": "shanxi"
+      },
+      {
+        "id": "pagoda",
+        "name": "应县木塔",
+        "nameZh": "应县木塔",
+        "countryCode": "CN",
+        "geo": {
+          "lat": 39.565,
+          "lng": 113.183
+        },
+        "description": "用于固定底图上的示意定位，精确导航请搜索全名。",
+        "label": "应县木塔",
+        "mapRegionId": "shanxi"
+      },
+      {
+        "id": "jingtu",
+        "name": "净土寺",
+        "nameZh": "净土寺",
+        "countryCode": "CN",
+        "geo": {
+          "lat": 39.564,
+          "lng": 113.191
+        },
+        "description": "用于固定底图上的示意定位，精确导航请搜索全名。",
+        "label": "净土寺",
+        "mapRegionId": "shanxi"
+      },
+      {
+        "id": "linfen",
+        "name": "临汾",
+        "nameZh": "临汾",
+        "countryCode": "CN",
+        "geo": {
+          "lat": 36.09,
+          "lng": 111.52
+        },
+        "description": "用于固定底图上的示意定位，精确导航请搜索全名。",
+        "label": "临汾",
+        "mapRegionId": "shanxi"
+      },
+      {
+        "id": "xiaoxitian",
+        "name": "小西天",
+        "nameZh": "小西天",
+        "countryCode": "CN",
+        "geo": {
+          "lat": 36.7,
+          "lng": 110.93
+        },
+        "description": "用于固定底图上的示意定位，精确导航请搜索全名。",
+        "label": "小西天",
+        "mapRegionId": "shanxi"
+      },
+      {
+        "id": "guangsheng",
+        "name": "广胜寺",
+        "nameZh": "广胜寺",
+        "countryCode": "CN",
+        "geo": {
+          "lat": 36.31,
+          "lng": 111.68
+        },
+        "description": "用于固定底图上的示意定位，精确导航请搜索全名。",
+        "label": "广胜寺",
+        "mapRegionId": "shanxi"
+      },
+      {
+        "id": "lfq",
+        "name": "临汾尧都机场",
+        "nameZh": "临汾尧都机场",
+        "countryCode": "CN",
+        "geo": {
+          "lat": 36.13,
+          "lng": 111.64
+        },
+        "description": "用于固定底图上的示意定位，精确导航请搜索全名。",
+        "label": "临汾尧都机场",
+        "mapRegionId": "shanxi"
+      }
+    ],
+    "routes": [
+      {
+        "day": 1,
+        "placeIds": [
+          "tyn",
+          "taiyuan"
+        ]
+      },
+      {
+        "day": 2,
+        "placeIds": [
+          "taiyuan",
+          "jinci"
+        ]
+      },
+      {
+        "day": 3,
+        "placeIds": [
+          "taiyuan",
+          "wutai"
+        ]
+      },
+      {
+        "day": 4,
+        "placeIds": [
+          "wutai",
+          "datong"
+        ]
+      },
+      {
+        "day": 5,
+        "placeIds": [
+          "datong",
+          "yungang"
+        ]
+      },
+      {
+        "day": 6,
+        "placeIds": [
+          "datong",
+          "yingxian",
+          "linfen"
+        ]
+      },
+      {
+        "day": 7,
+        "placeIds": [
+          "linfen",
+          "xiaoxitian",
+          "guangsheng",
+          "linfen"
+        ]
+      },
+      {
+        "day": 8,
+        "placeIds": [
+          "linfen",
+          "lfq"
+        ]
+      }
+    ],
+    "dailyRoutes": [
+      {
+        "id": "daily-1",
+        "day": 1,
+        "date": "2026-10-17",
+        "label": "厦门 → 太原 · 博物院与初见晋阳",
+        "placeIds": [
+          "tyn",
+          "taiyuan",
+          "museum"
+        ]
+      },
+      {
+        "id": "daily-2",
+        "day": 2,
+        "date": "2026-10-18",
+        "label": "太原 · 晋祠慢看，古县城随兴",
+        "placeIds": [
+          "taiyuan",
+          "jinci",
+          "ancient"
+        ]
+      },
+      {
+        "id": "daily-3",
+        "day": 3,
+        "date": "2026-10-19",
+        "label": "太原 → 五台山 · 台怀镇寺院",
+        "placeIds": [
+          "taiyuan",
+          "wutai",
+          "xiantong",
+          "tayuan"
+        ]
+      },
+      {
+        "id": "daily-4",
+        "day": 4,
+        "date": "2026-10-20",
+        "label": "五台山 → 大同 · 给17:00班车留余量",
+        "placeIds": [
+          "wuye",
+          "pusa",
+          "dailuo",
+          "guanghua",
+          "datong"
+        ]
+      },
+      {
+        "id": "daily-5",
+        "day": 5,
+        "date": "2026-10-21",
+        "label": "大同 · 云冈石窟与古城",
+        "placeIds": [
+          "datong",
+          "yungang",
+          "huayan",
+          "shanhua"
+        ]
+      },
+      {
+        "id": "daily-6",
+        "day": 6,
+        "date": "2026-10-22",
+        "label": "大同 → 应县 → 临汾 · 顺路南下",
+        "placeIds": [
+          "datong",
+          "yingxian",
+          "pagoda",
+          "jingtu",
+          "linfen"
+        ]
+      },
+      {
+        "id": "daily-7",
+        "day": 7,
+        "date": "2026-10-23",
+        "label": "临汾 · 小西天与广胜寺一日游",
+        "placeIds": [
+          "linfen",
+          "xiaoxitian",
+          "guangsheng",
+          "linfen"
+        ]
+      },
+      {
+        "id": "daily-8",
+        "day": 8,
+        "date": "2026-10-24",
+        "label": "临汾 → 天津 · 从容返程",
+        "placeIds": [
+          "linfen",
+          "lfq"
+        ]
+      }
+    ]
+  },
+  "expenseSummary": {
+    "currency": "CNY",
+    "asOf": "2026-09-16",
+    "flightCents": 209900,
+    "accommodationCents": 116758,
+    "confirmedOrderCents": 326658,
+    "excludedCancelledCents": 58000,
+    "additionalBudgetCents": {
+      "min": 211000,
+      "max": 324000
+    },
+    "estimatedTotalCents": {
+      "min": 537658,
+      "max": 650658
+    },
+    "basis": "订单金额合计；不等同于银行流水核销；酒店是整单价格；预估支出不计入实际账单",
+    "excludesBookedTourAmountPending": true,
+    "statusAsOf": "2026-09-23"
+  },
+  "referenceSources": [
+    {
+      "title": "山西博物院官方开放与预约",
+      "url": "https://shanximuseum.com.cn/sx/index/index.html"
+    },
+    {
+      "title": "12306预售期公告",
+      "url": "https://www.12306.cn/mormhweb/zxdt/202205/t20220531_37508.html"
+    },
+    {
+      "title": "五台山与大同直通车2025年公告",
+      "url": "https://ai.dt.gov.cn/dtszf/bumdtq/202506/3372307ef5a144c0a7776207e970e1d9.shtml"
+    },
+    {
+      "title": "大同直通车2026年运营提醒",
+      "url": "https://ai.dt.gov.cn/dtszf/tzggnr/202605/7ce05661f9f4485a8962318384d61a85.shtml"
+    },
+    {
+      "title": "大同南站云冈直通车2025年公告",
+      "url": "https://www.dt.gov.cn/dtszf/gjcxms/202505/21cbfa7671ef48ba8fe5ff5999e268b8.shtml"
+    },
+    {
+      "title": "近期大同至应县时刻参考（非10/22）",
+      "url": "https://trains.ctrip.com/TrainBooking/datong-yingxian/gaotie/"
+    }
+  ],
+  "routeMap": {
+    "defaultRegionId": "shanxi",
+    "regions": [
+      {
+        "id": "shanxi",
+        "label": "山西",
+        "countryCode": "CN",
+        "scope": "template-schematic",
+        "mapMode": "frozen-template",
+        "templateId": "compact-basin",
+        "mapModeReason": "dense-place-cluster",
+        "mapModeMetrics": {
+          "placeCount": 24,
+          "geoPlaceCount": 24,
+          "widthKm": 232.79,
+          "heightKm": 446.22,
+          "spanKm": 471.24,
+          "averageNearestKm": 7.35,
+          "components": 1,
+          "largestLegKm": 411.73,
+          "jumpRatio": 6.77
+        },
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "canvas": {
+          "width": 1448,
+          "height": 1086
+        },
+        "projection": {
+          "type": "relative-schematic",
+          "bounds": null
+        },
+        "baseImage": "assets/maps/templates/template-07-compact-basin.webp",
+        "title": "山西 · 旅行路线",
+        "ariaLabel": "山西模板化旅行路线示意图，共8天",
+        "description": "太原 → 五台山 → 大同 → 应县 → 临汾",
+        "disclaimer": "本图仅表达山西内部的相对方位与路线顺序；点位为示意定位，不代表真实比例、精确位置或行政边界。东京、厦门和天津不纳入山西地图。",
+        "heading": {
+          "text": "SHANXI / 山西古建秋游",
+          "x": 33,
+          "y": 105,
+          "size": 40
+        },
+        "legend": {
+          "x": 35,
+          "y": 168,
+          "gap": 43
+        },
+        "annotations": [],
+        "routes": [
+          {
+            "day": 1,
+            "color": "#397dc1",
+            "placeIds": [
+              "tyn",
+              "taiyuan"
+            ],
+            "paths": [
+              "M805.93 620.83 C767.0 589.7 739.5 550.5 725.2 505.6"
+            ],
+            "overviewPaths": [
+              "M805.93 620.83 C767.0 589.7 739.5 550.5 725.2 505.6"
+            ]
+          },
+          {
+            "day": 2,
+            "color": "#e77e22",
+            "placeIds": [
+              "taiyuan",
+              "jinci"
+            ],
+            "paths": [
+              "M725.2 505.6 C704.8 525.2 691.3 548.7 685.59 574.78"
+            ],
+            "overviewPaths": [
+              "M725.2 505.6 C704.8 525.2 691.3 548.7 685.59 574.78"
+            ]
+          },
+          {
+            "day": 3,
+            "color": "#618344",
+            "placeIds": [
+              "taiyuan",
+              "wutai"
+            ],
+            "paths": [
+              "M725.2 505.6 C791.4 465.0 863.4 445.5 936.87 448.34"
+            ],
+            "overviewPaths": [
+              "M725.2 505.6 C791.4 465.0 863.4 445.5 936.87 448.34"
+            ]
+          },
+          {
+            "day": 4,
+            "color": "#209aaa",
+            "placeIds": [
+              "wutai",
+              "datong"
+            ],
+            "paths": [
+              "M936.87 448.34 C949.2 379.7 942.0 313.3 915.73 252.82"
+            ],
+            "overviewPaths": [
+              "M936.87 448.34 C949.2 379.7 942.0 313.3 915.73 252.82"
+            ]
+          },
+          {
+            "day": 5,
+            "color": "#8865a5",
+            "placeIds": [
+              "datong",
+              "yungang"
+            ],
+            "paths": [
+              "M915.73 252.82 C855.0 253.7 799.0 238.1 750.75 206.92"
+            ],
+            "overviewPaths": [
+              "M915.73 252.82 C855.0 253.7 799.0 238.1 750.75 206.92"
+            ]
+          },
+          {
+            "day": 6,
+            "color": "#df6185",
+            "placeIds": [
+              "datong",
+              "yingxian",
+              "linfen"
+            ],
+            "paths": [
+              "M915.73 252.82 C853.8 268.1 801.0 298.9 760.36 343.38 C736.0 519.5 683.1 686.6 604.73 834.81"
+            ],
+            "overviewPaths": [
+              "M915.73 252.82 C853.8 268.1 801.0 298.9 760.36 343.38 C736.0 519.5 683.1 686.6 604.73 834.81"
+            ]
+          },
+          {
+            "day": 7,
+            "color": "#397dc1",
+            "placeIds": [
+              "linfen",
+              "xiaoxitian",
+              "guangsheng",
+              "linfen"
+            ],
+            "paths": [
+              "M604.73 834.81 C580.4 805.3 565.9 771.6 562.24 735.63 C586.9 756.1 615.1 768.2 645.28 771.35 C637.8 797.0 624.1 818.6 604.73 834.81"
+            ],
+            "overviewPaths": [
+              "M604.73 834.81 C612.2 809.2 626.0 787.6 645.28 771.35 C625.1 788.9 611.4 810.4 604.73 834.81"
+            ]
+          },
+          {
+            "day": 8,
+            "color": "#e77e22",
+            "placeIds": [
+              "linfen",
+              "lfq"
+            ],
+            "paths": [
+              "M604.73 834.81 C629.5 842.9 654.4 843.6 678.06 836.92"
+            ],
+            "overviewPaths": [
+              "M604.73 834.81 C629.5 842.9 654.4 843.6 678.06 836.92"
+            ]
+          }
+        ],
+        "places": [
+          {
+            "id": "tyn",
+            "x": 805.93,
+            "y": 620.83,
+            "color": "#397dc1",
+            "tx": 837.93,
+            "ty": 588.83,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "太原武宿机场"
+            ],
+            "query": "太原武宿机场 山西",
+            "geo": {
+              "lat": 37.75,
+              "lng": 112.63
+            },
+            "days": [
+              1
+            ]
+          },
+          {
+            "id": "taiyuan",
+            "x": 725.2,
+            "y": 505.6,
+            "color": "#397dc1",
+            "tx": 693.2,
+            "ty": 473.6,
+            "size": 24,
+            "anchor": "end",
+            "lines": [
+              "太原"
+            ],
+            "query": "太原 山西",
+            "geo": {
+              "lat": 37.87,
+              "lng": 112.55
+            },
+            "days": [
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "id": "museum",
+            "x": 730.79,
+            "y": 634.31,
+            "color": "#397dc1",
+            "tx": 808.79,
+            "ty": 710.31,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "山西博物院"
+            ],
+            "query": "山西博物院 山西",
+            "geo": {
+              "lat": 37.86,
+              "lng": 112.53
+            },
+            "days": []
+          },
+          {
+            "id": "zhonglou",
+            "x": 800.54,
+            "y": 512.97,
+            "color": "#397dc1",
+            "tx": 662.54,
+            "ty": 614.97,
+            "size": 24,
+            "anchor": "end",
+            "lines": [
+              "钟楼街"
+            ],
+            "query": "钟楼街 山西",
+            "geo": {
+              "lat": 37.87,
+              "lng": 112.57
+            },
+            "days": []
+          },
+          {
+            "id": "jinci",
+            "x": 685.59,
+            "y": 574.78,
+            "color": "#e77e22",
+            "tx": 547.59,
+            "ty": 676.78,
+            "size": 24,
+            "anchor": "end",
+            "lines": [
+              "晋祠"
+            ],
+            "query": "晋祠 山西",
+            "geo": {
+              "lat": 37.71,
+              "lng": 112.44
+            },
+            "days": [
+              2
+            ]
+          },
+          {
+            "id": "ancient",
+            "x": 757.96,
+            "y": 570.81,
+            "color": "#397dc1",
+            "tx": 835.96,
+            "ty": 508.81,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "太原古县城"
+            ],
+            "query": "太原古县城 山西",
+            "geo": {
+              "lat": 37.75,
+              "lng": 112.48
+            },
+            "days": []
+          },
+          {
+            "id": "wutai",
+            "x": 936.87,
+            "y": 448.34,
+            "color": "#618344",
+            "tx": 1014.87,
+            "ty": 386.34,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "五台山台怀镇"
+            ],
+            "query": "五台山台怀镇 山西",
+            "geo": {
+              "lat": 39,
+              "lng": 113.6
+            },
+            "days": [
+              3,
+              4
+            ]
+          },
+          {
+            "id": "xiantong",
+            "x": 954.42,
+            "y": 380.72,
+            "color": "#397dc1",
+            "tx": 1032.42,
+            "ty": 318.72,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "显通寺"
+            ],
+            "query": "显通寺 山西",
+            "geo": {
+              "lat": 39.013,
+              "lng": 113.595
+            },
+            "days": []
+          },
+          {
+            "id": "tayuan",
+            "x": 813.63,
+            "y": 419.48,
+            "color": "#397dc1",
+            "tx": 735.63,
+            "ty": 357.48,
+            "size": 24,
+            "anchor": "end",
+            "lines": [
+              "塔院寺"
+            ],
+            "query": "塔院寺 山西",
+            "geo": {
+              "lat": 39.01,
+              "lng": 113.596
+            },
+            "days": []
+          },
+          {
+            "id": "wuye",
+            "x": 834.93,
+            "y": 355.16,
+            "color": "#397dc1",
+            "tx": 756.93,
+            "ty": 293.16,
+            "size": 24,
+            "anchor": "end",
+            "lines": [
+              "五爷庙"
+            ],
+            "query": "五爷庙 山西",
+            "geo": {
+              "lat": 39.009,
+              "lng": 113.596
+            },
+            "days": []
+          },
+          {
+            "id": "pusa",
+            "x": 867.8,
+            "y": 468.24,
+            "color": "#397dc1",
+            "tx": 1005.8,
+            "ty": 570.24,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "菩萨顶"
+            ],
+            "query": "菩萨顶 山西",
+            "geo": {
+              "lat": 39.016,
+              "lng": 113.597
+            },
+            "days": []
+          },
+          {
+            "id": "dailuo",
+            "x": 905.42,
+            "y": 332.07,
+            "color": "#397dc1",
+            "tx": 1043.42,
+            "ty": 244.07,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "黛螺顶"
+            ],
+            "query": "黛螺顶 山西",
+            "geo": {
+              "lat": 39.017,
+              "lng": 113.61
+            },
+            "days": []
+          },
+          {
+            "id": "guanghua",
+            "x": 886.85,
+            "y": 399.89,
+            "color": "#397dc1",
+            "tx": 1024.85,
+            "ty": 501.89,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "广化寺乘车点"
+            ],
+            "query": "广化寺乘车点 山西",
+            "geo": {
+              "lat": 39.023,
+              "lng": 113.604
+            },
+            "days": []
+          },
+          {
+            "id": "datong",
+            "x": 915.73,
+            "y": 252.82,
+            "color": "#209aaa",
+            "tx": 1053.73,
+            "ty": 164.82,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "大同"
+            ],
+            "query": "大同 山西",
+            "geo": {
+              "lat": 40.09,
+              "lng": 113.3
+            },
+            "days": [
+              4,
+              5,
+              6
+            ]
+          },
+          {
+            "id": "yungang",
+            "x": 750.75,
+            "y": 206.92,
+            "color": "#8865a5",
+            "tx": 672.75,
+            "ty": 144.92,
+            "size": 24,
+            "anchor": "end",
+            "lines": [
+              "云冈石窟"
+            ],
+            "query": "云冈石窟 山西",
+            "geo": {
+              "lat": 40.11,
+              "lng": 113.13
+            },
+            "days": [
+              5
+            ]
+          },
+          {
+            "id": "huayan",
+            "x": 887.29,
+            "y": 189,
+            "color": "#397dc1",
+            "tx": 1025.29,
+            "ty": 101,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "华严寺"
+            ],
+            "query": "华严寺 山西",
+            "geo": {
+              "lat": 40.09,
+              "lng": 113.291
+            },
+            "days": []
+          },
+          {
+            "id": "shanhua",
+            "x": 819.81,
+            "y": 211.01,
+            "color": "#397dc1",
+            "tx": 851.81,
+            "ty": 179.01,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "善化寺"
+            ],
+            "query": "善化寺 山西",
+            "geo": {
+              "lat": 40.083,
+              "lng": 113.299
+            },
+            "days": []
+          },
+          {
+            "id": "yingxian",
+            "x": 760.36,
+            "y": 343.38,
+            "color": "#df6185",
+            "tx": 728.36,
+            "ty": 393.38,
+            "size": 24,
+            "anchor": "end",
+            "lines": [
+              "应县"
+            ],
+            "query": "应县 山西",
+            "geo": {
+              "lat": 39.55,
+              "lng": 113.19
+            },
+            "days": [
+              6
+            ]
+          },
+          {
+            "id": "pagoda",
+            "x": 850.9,
+            "y": 282.53,
+            "color": "#397dc1",
+            "tx": 882.9,
+            "ty": 250.53,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "应县木塔"
+            ],
+            "query": "应县木塔 山西",
+            "geo": {
+              "lat": 39.565,
+              "lng": 113.183
+            },
+            "days": []
+          },
+          {
+            "id": "jingtu",
+            "x": 779.15,
+            "y": 274.17,
+            "color": "#397dc1",
+            "tx": 701.15,
+            "ty": 212.17,
+            "size": 24,
+            "anchor": "end",
+            "lines": [
+              "净土寺"
+            ],
+            "query": "净土寺 山西",
+            "geo": {
+              "lat": 39.564,
+              "lng": 113.191
+            },
+            "days": []
+          },
+          {
+            "id": "linfen",
+            "x": 604.73,
+            "y": 834.81,
+            "color": "#df6185",
+            "tx": 682.73,
+            "ty": 772.81,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "临汾"
+            ],
+            "query": "临汾 山西",
+            "geo": {
+              "lat": 36.09,
+              "lng": 111.52
+            },
+            "days": [
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "id": "xiaoxitian",
+            "x": 562.24,
+            "y": 735.63,
+            "color": "#397dc1",
+            "tx": 484.24,
+            "ty": 811.63,
+            "size": 24,
+            "anchor": "end",
+            "lines": [
+              "小西天"
+            ],
+            "query": "小西天 山西",
+            "geo": {
+              "lat": 36.7,
+              "lng": 110.93
+            },
+            "days": [
+              7
+            ]
+          },
+          {
+            "id": "guangsheng",
+            "x": 645.28,
+            "y": 771.35,
+            "color": "#397dc1",
+            "tx": 783.28,
+            "ty": 873.35,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "广胜寺"
+            ],
+            "query": "广胜寺 山西",
+            "geo": {
+              "lat": 36.31,
+              "lng": 111.68
+            },
+            "days": [
+              7
+            ]
+          },
+          {
+            "id": "lfq",
+            "x": 678.06,
+            "y": 836.92,
+            "color": "#e77e22",
+            "tx": 816.06,
+            "ty": 938.92,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "临汾尧都机场"
+            ],
+            "query": "临汾尧都机场 山西",
+            "geo": {
+              "lat": 36.13,
+              "lng": 111.64
+            },
+            "days": [
+              8
+            ]
+          }
+        ],
+        "overviewPlaceIds": [
+          "tyn",
+          "taiyuan",
+          "jinci",
+          "wutai",
+          "datong",
+          "yungang",
+          "yingxian",
+          "linfen",
+          "guangsheng",
+          "lfq"
+        ],
+        "dailyLayouts": {
+          "1": {
+            "places": [
+              "tyn",
+              "taiyuan",
+              "museum"
+            ],
+            "labels": {
+              "tyn": {
+                "x": 837.93,
+                "y": 588.83,
+                "anchor": "start"
+              },
+              "taiyuan": {
+                "x": 693.2,
+                "y": 473.6,
+                "anchor": "end"
+              },
+              "museum": {
+                "x": 808.79,
+                "y": 710.31,
+                "anchor": "start"
+              }
+            },
+            "transport": [
+              {
+                "items": [],
+                "x": 765.57,
+                "y": 563.22
+              },
+              {
+                "items": [],
+                "x": 728,
+                "y": 569.95
+              }
+            ]
+          },
+          "2": {
+            "places": [
+              "taiyuan",
+              "jinci",
+              "ancient"
+            ],
+            "labels": {
+              "taiyuan": {
+                "x": 693.2,
+                "y": 473.6,
+                "anchor": "end"
+              },
+              "jinci": {
+                "x": 547.59,
+                "y": 676.78,
+                "anchor": "end"
+              },
+              "ancient": {
+                "x": 835.96,
+                "y": 508.81,
+                "anchor": "start"
+              }
+            },
+            "transport": [
+              {
+                "items": [],
+                "x": 705.39,
+                "y": 540.19
+              },
+              {
+                "items": [],
+                "x": 721.78,
+                "y": 572.79
+              }
+            ]
+          },
+          "3": {
+            "places": [
+              "taiyuan",
+              "wutai",
+              "xiantong",
+              "tayuan"
+            ],
+            "labels": {
+              "taiyuan": {
+                "x": 693.2,
+                "y": 473.6,
+                "anchor": "end"
+              },
+              "wutai": {
+                "x": 1014.87,
+                "y": 386.34,
+                "anchor": "start"
+              },
+              "xiantong": {
+                "x": 1032.42,
+                "y": 318.72,
+                "anchor": "start"
+              },
+              "tayuan": {
+                "x": 735.63,
+                "y": 357.48,
+                "anchor": "end"
+              }
+            },
+            "transport": [
+              {
+                "items": [],
+                "x": 831.04,
+                "y": 476.97
+              },
+              {
+                "items": [],
+                "x": 945.64,
+                "y": 414.53
+              },
+              {
+                "items": [],
+                "x": 884.02,
+                "y": 400.1
+              }
+            ]
+          },
+          "4": {
+            "places": [
+              "wuye",
+              "pusa",
+              "dailuo",
+              "guanghua",
+              "datong"
+            ],
+            "labels": {
+              "wuye": {
+                "x": 756.93,
+                "y": 293.16,
+                "anchor": "end"
+              },
+              "pusa": {
+                "x": 1005.8,
+                "y": 570.24,
+                "anchor": "start"
+              },
+              "dailuo": {
+                "x": 1043.42,
+                "y": 244.07,
+                "anchor": "start"
+              },
+              "guanghua": {
+                "x": 1024.85,
+                "y": 501.89,
+                "anchor": "start"
+              },
+              "datong": {
+                "x": 1053.73,
+                "y": 164.82,
+                "anchor": "start"
+              }
+            },
+            "transport": [
+              {
+                "items": [],
+                "x": 851.37,
+                "y": 411.7
+              },
+              {
+                "items": [],
+                "x": 886.61,
+                "y": 400.15
+              },
+              {
+                "items": [],
+                "x": 896.13,
+                "y": 365.98
+              },
+              {
+                "items": [],
+                "x": 901.29,
+                "y": 326.36
+              }
+            ]
+          },
+          "5": {
+            "places": [
+              "datong",
+              "yungang",
+              "huayan",
+              "shanhua"
+            ],
+            "labels": {
+              "datong": {
+                "x": 1053.73,
+                "y": 164.82,
+                "anchor": "start"
+              },
+              "yungang": {
+                "x": 672.75,
+                "y": 144.92,
+                "anchor": "end"
+              },
+              "huayan": {
+                "x": 1025.29,
+                "y": 101,
+                "anchor": "start"
+              },
+              "shanhua": {
+                "x": 851.81,
+                "y": 179.01,
+                "anchor": "start"
+              }
+            },
+            "transport": [
+              {
+                "items": [],
+                "x": 833.24,
+                "y": 229.87
+              },
+              {
+                "items": [],
+                "x": 819.02,
+                "y": 197.96
+              },
+              {
+                "items": [],
+                "x": 853.55,
+                "y": 200
+              }
+            ]
+          },
+          "6": {
+            "places": [
+              "datong",
+              "yingxian",
+              "pagoda",
+              "jingtu",
+              "linfen"
+            ],
+            "labels": {
+              "datong": {
+                "x": 1053.73,
+                "y": 164.82,
+                "anchor": "start"
+              },
+              "yingxian": {
+                "x": 728.36,
+                "y": 393.38,
+                "anchor": "end"
+              },
+              "pagoda": {
+                "x": 882.9,
+                "y": 250.53,
+                "anchor": "start"
+              },
+              "jingtu": {
+                "x": 701.15,
+                "y": 212.17,
+                "anchor": "end"
+              },
+              "linfen": {
+                "x": 682.73,
+                "y": 772.81,
+                "anchor": "start"
+              }
+            },
+            "transport": [
+              {
+                "items": [],
+                "x": 838.05,
+                "y": 298.1
+              },
+              {
+                "items": [],
+                "x": 805.63,
+                "y": 312.95
+              },
+              {
+                "items": [],
+                "x": 815.02,
+                "y": 278.35
+              },
+              {
+                "items": [],
+                "x": 691.94,
+                "y": 554.49
+              }
+            ]
+          },
+          "7": {
+            "places": [
+              "linfen",
+              "xiaoxitian",
+              "guangsheng"
+            ],
+            "labels": {
+              "linfen": {
+                "x": 682.73,
+                "y": 772.81,
+                "anchor": "start"
+              },
+              "xiaoxitian": {
+                "x": 484.24,
+                "y": 811.63,
+                "anchor": "end"
+              },
+              "guangsheng": {
+                "x": 783.28,
+                "y": 873.35,
+                "anchor": "start"
+              }
+            },
+            "transport": [
+              {
+                "items": [],
+                "x": 583.49,
+                "y": 785.22
+              },
+              {
+                "items": [],
+                "x": 603.76,
+                "y": 753.49
+              },
+              {
+                "items": [],
+                "x": 625,
+                "y": 803.08
+              }
+            ]
+          },
+          "8": {
+            "places": [
+              "linfen",
+              "lfq"
+            ],
+            "labels": {
+              "linfen": {
+                "x": 682.73,
+                "y": 772.81,
+                "anchor": "start"
+              },
+              "lfq": {
+                "x": 816.06,
+                "y": 938.92,
+                "anchor": "start"
+              }
+            },
+            "transport": [
+              {
+                "items": [],
+                "x": 641.39,
+                "y": 835.87
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+}
