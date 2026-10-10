@@ -1348,7 +1348,8 @@
       {
         "id": "todo-rail",
         "text": "已出票：10/22 D1049 应县西12:40→临汾西16:03，二等座¥156。",
-        "completed": true
+        "completed": true,
+        "syncFromPlan": true
       },
       {
         "id": "todo-bus",
@@ -1378,7 +1379,8 @@
       {
         "id": "todo-rail-datong",
         "text": "已出票：10/22 D1907 大同南08:27→应县西08:46，二等座¥29。",
-        "completed": true
+        "completed": true,
+        "syncFromPlan": true
       },
       {
         "id": "todo-wutai-entry",

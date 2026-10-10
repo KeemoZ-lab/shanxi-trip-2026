@@ -768,6 +768,20 @@ async function loadSharedState() {
     })).filter((item) => item.text);
     await Promise.all(state.todos.map((todo) => todoAdapter.applyChange("todos", todo, "upsert")));
   }
+  if (todoAdapter?.mode === "local" && hasLocalTodoSnapshot) {
+    const confirmedChanges = [];
+    for (const authored of authoredTodos.filter((item) => item.syncFromPlan === true)) {
+      const todo = state.todos.find((item) => item.id === authored.id);
+      if (!todo) continue;
+      const text = String(authored.text || authored.title || "").trim();
+      const completed = Boolean(authored.completed);
+      if (!text || (todo.text === text && todo.completed === completed)) continue;
+      todo.text = text;
+      todo.completed = completed;
+      confirmedChanges.push(todoAdapter.applyChange("todos", todo, "upsert"));
+    }
+    await Promise.all(confirmedChanges);
+  }
 }
 
 async function saveSharedChange(collection, value, op = "upsert") {
